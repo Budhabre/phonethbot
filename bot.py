@@ -48,6 +48,8 @@ def help(update, context):
 
 def echo(update, context):
     """Echo the user message."""
+    print(f"Poluchihme novo: {update.message.text}")
+    # TODO: Add user info
     update.message.reply_text(update.message.text)
 
 
